@@ -1,4 +1,4 @@
-import { createContext, type ReactNode } from 'react';
+import { createContext, useState, type ReactNode } from 'react';
 
 export const AppContext = createContext({});
 
@@ -7,8 +7,7 @@ interface ProviderProps {
 }
 
 export const AppContextProvider = ({children}: ProviderProps) => {
-    const contextValue = {
-
+    const contextValue = {       
     }
     return (
         <AppContext.Provider value={{contextValue}}>
